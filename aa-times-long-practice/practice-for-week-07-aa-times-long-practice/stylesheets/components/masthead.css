@@ -1,1 +1,50 @@
-/* Your code here */
+.masthead{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "r1 r2"
+    "r3 r4"
+    "r5 r6";
+}
+
+.masthead__menu-and-search{
+    grid-area: r1;
+}
+
+.masthead__menu-icon{
+    font-size: 11px;
+    padding: 7px 9px;
+}
+.masthead__menu-icon:hover{
+    background-color: #f7f7f5;
+}
+
+.masthead__search{
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__search:hover{
+    background-color: #f7f7f5;
+}
+
+.masthead__actions{
+    grid-area: r2;
+}
+
+.masthead__technologies{
+    grid-area: r3;
+}
+
+.masthead__date{
+    grid-area: r4;
+}
+
+.masthead__logo{
+    grid-area: r5;
+}
+
+.masthead__paper{
+    grid-area:r6;
+}
