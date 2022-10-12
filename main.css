@@ -46,10 +46,46 @@ body {
   line-height: 28px;
 }
 
-.team__info>a {
+.team__info a {
+  /* using ^ this is overarching not just child elements */
   color: #172b4d;
   line-height: 20px;
   font-weight: none;
+}
+
+.tabbed-nav__container{
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group{
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link{
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen and (min-width:501){
+.tabbed-nav__group{
+  align-items: center;
+  justify-content: center;
+}
+}
+
+@media screen and (max-width:500){
+.tabbed-nav__group, .tabbed-nav__link{
+  display: block;
+}
 }
 
 /* Supplied CSS follows. */
