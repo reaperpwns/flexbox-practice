@@ -1,8 +1,36 @@
-/* Your code here */
+body{
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.header-nav__container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+}
+
+#alerts{
+  background-color: #CF513D;
+}
+
+@media screen and (max-width: 730px){
+  .boards-label, #search {
+    display: none;
+  }
+}
+
 
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
+  margin: 0px;
+  padding: 2px;
+
 }
 
 .header-nav__button {
